@@ -16,7 +16,7 @@ internal class Program
 
         warehouse.ShowAllGoods();
 
-        Cart cart = shop.Cart();
+        Cart cart = shop.GetCart();
         cart.Add(iPhone12, 4);
         cart.Add(iPhone11, 3);
 

@@ -4,8 +4,11 @@
 
     public Order()
     {
-        _paylink = "https://example.com/pay?orderId=123";
+        _paylink = GeneratedPaylink();
     }
 
     public string Paylink => _paylink;
+
+    private string GeneratedPaylink() =>
+        "https://example.com/pay?orderId=123";
 }

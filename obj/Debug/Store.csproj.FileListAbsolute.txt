@@ -1,0 +1,7 @@
+Z:\Contain\CSLight\Store\bin\Debug\Store.exe.config
+Z:\Contain\CSLight\Store\bin\Debug\Store.exe
+Z:\Contain\CSLight\Store\bin\Debug\Store.pdb
+Z:\Contain\CSLight\Store\obj\Debug\Store.csproj.AssemblyReference.cache
+Z:\Contain\CSLight\Store\obj\Debug\Store.csproj.CoreCompileInputs.cache
+Z:\Contain\CSLight\Store\obj\Debug\Store.exe
+Z:\Contain\CSLight\Store\obj\Debug\Store.pdb

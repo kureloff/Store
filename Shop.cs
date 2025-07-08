@@ -12,7 +12,7 @@ public class Shop
         _warehouse.GoodsChanged += UpdateGoodsInfo;
     }
 
-    public Cart Cart()
+    public Cart GetCart()
     {
         _cart = new Cart(_warehouse.GetGoods());
         _cart.Ordered += RemoveGoods;
@@ -22,6 +22,9 @@ public class Shop
 
     private void RemoveGoods(Dictionary<Product, int> goods)
     {
+        if (goods == null)
+            throw new ArgumentNullException(nameof(goods));
+
         foreach (Product goodKey in goods.Keys)
         {
             _warehouse.RemoveGoods(goodKey, goods[goodKey]);
