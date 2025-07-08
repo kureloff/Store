@@ -4,69 +4,69 @@ using System.Linq;
 
 public class Warehouse
 {
-    private Dictionary<Product, int> _goods;
+    private Dictionary<Product, int> _products;
 
     public event Action<Dictionary<Product, int>> GoodsChanged;
 
     public Warehouse()
     {
-        _goods = new Dictionary<Product, int>();
+        _products = new Dictionary<Product, int>();
     }
 
-    public void Delive(Product good, int count)
+    public void AddProduct(Product product, int count)
     {
-        if (good == null)
-            throw new ArgumentNullException(nameof(good));
+        if (product == null)
+            throw new ArgumentNullException(nameof(product));
 
         if (count < 0)
             throw new ArgumentOutOfRangeException(nameof(count));
 
-        foreach (Product goodKey in _goods.Keys)
+        foreach (Product productKey in _products.Keys)
         {
-            if (good == goodKey)
+            if (product == productKey)
             {
-                _goods[goodKey] += count;
+                _products[productKey] += count;
                 return;
             }
         }
 
-        _goods.Add(good, count);
+        _products.Add(product, count);
     }
 
     public void ShowAllGoods()
     {
-        foreach (Product goodKey in _goods.Keys)
-            Console.WriteLine($"Наименование: {goodKey.Name} Количество: {_goods[goodKey]}");
+        foreach (Product productKey in _products.Keys)
+            Console.WriteLine($"Наименование: {productKey.Name} Количество: {_products[productKey]}");
     }
 
     public Dictionary<Product, int> GetGoods()
     {
-        return _goods.ToDictionary(item => item.Key, item => item.Value);
+        return _products.ToDictionary(item => item.Key, item => item.Value);
     }
 
-    public void RemoveGoods(Product good, int count)
+    public void RemoveGoods(Product product, int count)
     {
-        if (good == null)
-            throw new ArgumentNullException(nameof(good));
+        if (product == null)
+            throw new ArgumentNullException(nameof(product));
 
         if (count < 0)
             throw new ArgumentOutOfRangeException(nameof(count));
 
-        foreach (Product goodKey in _goods.Keys)
+        foreach (Product productKey in _products.Keys)
         {
-            if(good == goodKey)
+            if(product == productKey)
             {
-                if (_goods[goodKey] >= count)
+                if (_products[productKey] >= count)
                 {
-                    _goods[goodKey] -= count;
-                    GoodsChanged?.Invoke(_goods);
+                    _products[productKey] -= count;
+                    GoodsChanged?.Invoke(_products);
                     return;
                 }
 
-                if (_goods[goodKey] <= 0)
+                if (_products[productKey] <= 0)
                 {
-                    _goods.Remove(goodKey);
-                    GoodsChanged?.Invoke(_goods);
+                    _products.Remove(productKey);
+                    GoodsChanged?.Invoke(_products);
                     return;
                 }
             }

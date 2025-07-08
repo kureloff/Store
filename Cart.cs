@@ -4,18 +4,18 @@ using System.Linq;
 
 public class Cart
 {
-    private Dictionary<Product, int> _goodsWarehouse;
-    private Dictionary<Product, int> _goods;
+    private Dictionary<Product, int> _productsWarehouse;
+    private Dictionary<Product, int> _products;
 
-    public Action<Dictionary<Product, int>> Ordered;
+    public Action<Dictionary<Product, int>> OrderPurchased;
 
     public Cart(Dictionary<Product, int> goodsWarehouse)
     {
-        _goodsWarehouse = goodsWarehouse;
-        _goods = new Dictionary<Product, int>();
+        _productsWarehouse = goodsWarehouse ?? throw new ArgumentNullException(nameof(goodsWarehouse));
+        _products = new Dictionary<Product, int>();
     }
 
-    public void Add(Product product, int count)
+    public void AddProduct(Product product, int count)
     {
         if (product == null)
             throw new ArgumentNullException(nameof(product));
@@ -23,45 +23,45 @@ public class Cart
         if (count < 0)
             throw new ArgumentOutOfRangeException(nameof(count));
 
-        foreach (Product productKey in _goodsWarehouse.Keys)
+        foreach (Product productKey in _productsWarehouse.Keys)
         {
             if (product != productKey)
                 continue;
 
-            if (count > _goodsWarehouse[productKey])
+            if (count > _productsWarehouse[productKey])
             {
                 Console.WriteLine($"Товар {productKey.Name} в количестве {count} - нет на складе");
                 return;
             }
 
-            if (_goods.ContainsKey(product))
+            if (_products.ContainsKey(product))
             {
-                _goods[product] += count;
+                _products[product] += count;
                 return;
             }
 
-            _goods.Add(product, count);
+            _products.Add(product, count);
         }
     }
 
-    public Order Order()
+    public Order GetOrder()
     {
-        Ordered?.Invoke(_goods.ToDictionary(item => item.Key, item => item.Value));
-        _goods.Clear();
+        OrderPurchased?.Invoke(_products.ToDictionary(item => item.Key, item => item.Value));
+        _products.Clear();
 
         return new Order();
     }
 
     public void ShowAllGoods()
     {
-        foreach (Product productKey in _goods.Keys)
+        foreach (Product productKey in _products.Keys)
         {
-            Console.WriteLine($"Наименование: {productKey.Name} Количество: {_goods[productKey]}");
+            Console.WriteLine($"Наименование: {productKey.Name} Количество: {_products[productKey]}");
         }
     }
 
-    public void UpdateGoodsInfo(Dictionary<Product, int> goods)
+    public void UpdateGoodsInfo(Dictionary<Product, int> products)
     {
-        _goodsWarehouse = goods;
+        _productsWarehouse = products ?? throw new ArgumentNullException(nameof(products));
     }
 }

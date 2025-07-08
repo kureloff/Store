@@ -12,10 +12,10 @@ public class Shop
         _warehouse.GoodsChanged += UpdateGoodsInfo;
     }
 
-    public Cart GetCart()
+    public Cart CreateCart()
     {
         _cart = new Cart(_warehouse.GetGoods());
-        _cart.Ordered += RemoveGoods;
+        _cart.OrderPurchased += RemoveGoods;
 
         return _cart;
     }

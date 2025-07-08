@@ -7,20 +7,24 @@
       "RelativeMoniker": "D:0:0:{67F5BD50-4475-4DC2-B4C8-9F497C825D0D}|Store.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{67F5BD50-4475-4DC2-B4C8-9F497C825D0D}|Store.csproj|z:\\contain\\cslight\\store\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{67F5BD50-4475-4DC2-B4C8-9F497C825D0D}|Store.csproj|solutionrelative:order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{67F5BD50-4475-4DC2-B4C8-9F497C825D0D}|Store.csproj|z:\\contain\\cslight\\store\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{67F5BD50-4475-4DC2-B4C8-9F497C825D0D}|Store.csproj|solutionrelative:product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{67F5BD50-4475-4DC2-B4C8-9F497C825D0D}|Store.csproj|z:\\contain\\cslight\\store\\shop.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{67F5BD50-4475-4DC2-B4C8-9F497C825D0D}|Store.csproj|solutionrelative:shop.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{67F5BD50-4475-4DC2-B4C8-9F497C825D0D}|Store.csproj|z:\\contain\\cslight\\store\\warehouse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{67F5BD50-4475-4DC2-B4C8-9F497C825D0D}|Store.csproj|solutionrelative:warehouse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{67F5BD50-4475-4DC2-B4C8-9F497C825D0D}|Store.csproj|z:\\contain\\cslight\\store\\cart.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{67F5BD50-4475-4DC2-B4C8-9F497C825D0D}|Store.csproj|solutionrelative:cart.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{67F5BD50-4475-4DC2-B4C8-9F497C825D0D}|Store.csproj|z:\\contain\\cslight\\store\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{67F5BD50-4475-4DC2-B4C8-9F497C825D0D}|Store.csproj|solutionrelative:order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{67F5BD50-4475-4DC2-B4C8-9F497C825D0D}|Store.csproj|z:\\contain\\cslight\\store\\warehouse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{67F5BD50-4475-4DC2-B4C8-9F497C825D0D}|Store.csproj|solutionrelative:warehouse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,17 +34,30 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 1,
+              "Title": "Product.cs",
+              "DocumentMoniker": "Z:\\Contain\\CSLight\\Store\\Product.cs",
+              "RelativeDocumentMoniker": "Product.cs",
+              "ToolTip": "Z:\\Contain\\CSLight\\Store\\Product.cs",
+              "RelativeToolTip": "Product.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-08T03:40:55.877Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "Warehouse.cs",
               "DocumentMoniker": "Z:\\Contain\\CSLight\\Store\\Warehouse.cs",
               "RelativeDocumentMoniker": "Warehouse.cs",
               "ToolTip": "Z:\\Contain\\CSLight\\Store\\Warehouse.cs",
               "RelativeToolTip": "Warehouse.cs",
-              "ViewState": "AgIAADAAAAAAAAAAAAAowEQAAAAxAAAAAAAAAA==",
+              "ViewState": "AgIAAC4AAAAAAAAAAAAkwEQAAAAZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-07-08T03:20:57.819Z",
               "EditorCaption": ""
@@ -53,33 +70,33 @@
               "RelativeDocumentMoniker": "Shop.cs",
               "ToolTip": "Z:\\Contain\\CSLight\\Store\\Shop.cs",
               "RelativeToolTip": "Shop.cs",
-              "ViewState": "AgIAAAIAAAAAAAAAAAAxwBQAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAAwBUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-07-08T03:18:43.611Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 3,
               "Title": "Cart.cs",
               "DocumentMoniker": "Z:\\Contain\\CSLight\\Store\\Cart.cs",
               "RelativeDocumentMoniker": "Cart.cs",
               "ToolTip": "Z:\\Contain\\CSLight\\Store\\Cart.cs",
               "RelativeToolTip": "Cart.cs",
-              "ViewState": "AgIAACAAAAAAAAAAAAAWwDAAAAAIAAAAAAAAAA==",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAAwA4AAAAzAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-07-08T03:27:01.898Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
               "Title": "Order.cs",
               "DocumentMoniker": "Z:\\Contain\\CSLight\\Store\\Order.cs",
               "RelativeDocumentMoniker": "Order.cs",
               "ToolTip": "Z:\\Contain\\CSLight\\Store\\Order.cs",
               "RelativeToolTip": "Order.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAA5AAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-07-08T03:30:51.472Z",
               "EditorCaption": ""
@@ -92,7 +109,7 @@
               "RelativeDocumentMoniker": "Program.cs",
               "ToolTip": "Z:\\Contain\\CSLight\\Store\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAA0AAAAAAAAAAAAQwBQAAAAgAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-07-08T01:51:00.416Z",
               "EditorCaption": ""

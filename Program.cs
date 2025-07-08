@@ -11,19 +11,19 @@ internal class Program
 
         Shop shop = new Shop(warehouse);
 
-        warehouse.Delive(iPhone12, 10);
-        warehouse.Delive(iPhone11, 1);
+        warehouse.AddProduct(iPhone12, 10);
+        warehouse.AddProduct(iPhone11, 1);
 
         warehouse.ShowAllGoods();
 
-        Cart cart = shop.GetCart();
-        cart.Add(iPhone12, 4);
-        cart.Add(iPhone11, 3);
+        Cart cart = shop.CreateCart();
+        cart.AddProduct(iPhone12, 4);
+        cart.AddProduct(iPhone11, 3);
 
         cart.ShowAllGoods();
 
-        Console.WriteLine(cart.Order().Paylink);
+        Console.WriteLine(cart.GetOrder().Paylink);
 
-        cart.Add(iPhone12, 9);
+        cart.AddProduct(iPhone12, 9);
     }
 }
